@@ -34,3 +34,12 @@ if (score >= 80) {
 }
 
 // 
+
+for (let i = 1; i <= 12; i++) {
+    if (i % 2 === 0 ) {
+        continue;
+    }else if (i % 9 === 0) {
+        break;
+    }
+    console.log('now i have value '+i);
+}
