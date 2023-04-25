@@ -75,4 +75,29 @@ function showmsg(){
     msg.innerHTML = 'ช้าไปจ้า';
 }
 
-discount.addEventListener('click' , showmsg);   
+discount.addEventListener('click' , showmsg);
+
+// 
+
+let numInput = document.getElementById('numInput');
+let runBtn = document.getElementById('run-btn');
+let output = document.getElementById('output');
+
+function multi(){
+    let num = Number(numInput.value);
+    let ans = '';
+
+    if (num === 0) {
+        output.innerHTML = ' 0 คูณอะไรก็ได้ 0 จ้า'
+        return;
+    }
+    
+    for (let i = 1; i <= 12; i++) {
+        ans += '<p>';
+        ans += num + ' x ' + i +' = '+ (num*i);
+        ans += '</p>';
+    }
+    output.innerHTML = ans;
+}
+
+runBtn.addEventListener('click', multi);
