@@ -65,3 +65,14 @@ let cont2 = document.getElementById('content-2');
 let textHtml ='<b>HTML control</b>';
 textHtml += '<i> HTML control V2</i>'
 cont2.innerHTML = textHtml;
+
+// 
+
+let discount = document.getElementById('discount-btn');
+let msg = document.getElementById('message');
+
+function showmsg(){
+    msg.innerHTML = 'ช้าไปจ้า';
+}
+
+discount.addEventListener('click' , showmsg);   
