@@ -43,3 +43,17 @@ for (let i = 1; i <= 12; i++) {
     }
     console.log('now i have value '+i);
 }
+
+// 
+
+function calPyramidArea(length , width, height) {
+    let base = length * width;
+    let volume = 1/3 * base * height;
+    return volume;
+}
+
+let vol1 = calPyramidArea(2 , 2 ,3);
+
+let vol2 = calPyramidArea(4 , 4 ,6);
+
+console.log('area 1 = '+vol1 +' | area 2 = '+vol2);
