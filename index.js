@@ -57,3 +57,11 @@ let vol1 = calPyramidArea(2 , 2 ,3);
 let vol2 = calPyramidArea(4 , 4 ,6);
 
 console.log('area 1 = '+vol1 +' | area 2 = '+vol2);
+
+// 
+
+let cont2 = document.getElementById('content-2');
+
+let textHtml ='<b>HTML control</b>';
+textHtml += '<i> HTML control V2</i>'
+cont2.innerHTML = textHtml;
